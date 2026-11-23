@@ -1,0 +1,363 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: #f2f5f9;
+}
+
+.app {
+    width: 90%;
+    max-width: 600px;
+    margin: 50px auto;
+    background: white;
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+    margin-bottom: 5px;
+}
+
+p {
+    color: #666;
+}
+
+.routine {
+    margin-top: 25px;
+}
+
+.task {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    padding: 15px;
+    margin: 10px 0;
+    background: #f7f7f7;
+    border-radius: 10px;
+}
+
+.task input {
+    width: 18px;
+    height: 18px;
+}
+
+.task span {
+    font-size: 17px;
+}
+
+.task input:checked + span {
+    text-decoration: line-through;
+    opacity: 0.5;
+}
+@media (max-width: 600px) {
+    .app {
+        width: 90%;
+        margin: 20px auto;
+        padding: 20px;
+    }
+    h1 {
+        font-size: 28px;
+    }
+    .task {
+        padding: 12px;
+        gap: 10px;
+    }
+    .task span {
+        font-size: 16px;
+    }
+    .task input[type="time"]
+    {
+        width: 90px;
+        font-size: 14px;
+    } 
+} 
+.diet {
+    display: grid;
+    gap: 10px;
+    margin-top: 15px;
+}
+.diet label {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 12px;
+    background: #f7f7f7;
+    border-radius: 10px;
+    font-size: 16px;
+}
+.diet input[type="checkbox"] {
+    width: 18px;
+    height: 18px;
+}
+/* Daily Summary Dashboard */
+
+.summary {
+    margin-top: 25px;
+    padding: 20px;
+    background: #f7f7f7;
+    border-radius: 15px;
+}
+
+.summary-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 12px;
+    margin-top: 15px;
+}
+
+.summary-card {
+    padding: 18px 10px;
+    background: white;
+    border-radius: 12px;
+    text-align: center;
+}
+
+.summary-card span {
+    display: block;
+    font-size: 14px;
+    color: #666;
+}
+
+.summary-card strong {
+    display: block;
+    font-size: 25px;
+    margin-top: 8px;
+    color: #333;
+}
+
+/* ===== PREMIUM DARK DASHBOARD THEME ===== */
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: #080b12;
+    color: #f5f7ff;
+}
+
+.app {
+    width: 92%;
+    max-width: 600px;
+    margin: 25px auto;
+    padding: 22px;
+    background: #111722;
+    border: 1px solid #293344;
+    border-radius: 22px;
+    box-shadow: 0 10px 35px rgba(0,0,0,0.5);
+}
+
+h1 {
+    color: #ffffff;
+    font-size: 30px;
+}
+
+h2 {
+    color: #ffffff;
+    font-size: 21px;
+    margin-top: 25px;
+}
+
+p {
+    color: #aab4c5;
+}
+
+.task {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    padding: 15px;
+    margin: 12px 0;
+    background: #1c2635;
+    border: 1px solid #303c4e;
+    border-radius: 14px;
+    color: white;
+}
+
+.task span {
+    color: #ffffff;
+}
+
+.task input[type="checkbox"],
+.diet input[type="checkbox"] {
+    accent-color: #62e879;
+}
+
+.task input[type="time"] {
+    background: #111722;
+    color: white;
+    border: 1px solid #3a4658;
+    border-radius: 8px;
+    padding: 6px;
+}
+
+.summary {
+    margin-top: 25px;
+    padding: 20px;
+    background: linear-gradient(135deg, #1b2938, #101722);
+    border: 1px solid #344256;
+    border-radius: 18px;
+}
+
+.summary-card {
+    background: #202c3c;
+    border: 1px solid #35445a;
+    border-radius: 13px;
+    color: white;
+}
+
+.summary-card span {
+    color: #aab7c9;
+}
+
+.summary-card strong {
+    color: #69ed83;
+    font-size: 25px;
+}
+
+.diet label {
+    background: #1c2635;
+    color: white;
+    border: 1px solid #303c4e;
+    border-radius: 12px;
+}
+
+button {
+    background: linear-gradient(135deg, #39b95b, #197d3b);
+    color: white;
+    border: none;
+    border-radius: 12px;
+    padding: 12px 18px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+button:hover {
+    opacity: 0.9;
+}
+
+.water {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-top: 12px;
+}
+
+@media (max-width: 600px) {
+    .app {
+        width: 94%;
+        margin: 15px auto;
+        padding: 16px;
+    }
+
+    h1 {
+        font-size: 26px;
+    }
+
+    .summary {
+        padding: 15px;
+    }
+}
+/* Premium Dashboard Header */
+
+.dashboard-header {
+    margin-bottom: 25px;
+    padding: 22px;
+    background: linear-gradient(135deg, #202f42, #111722);
+    border: 1px solid #35445a;
+    border-radius: 20px;
+}
+
+.dashboard-header .eyebrow {
+    color: #69ed83;
+    font-size: 11px;
+    letter-spacing: 2px;
+    font-weight: bold;
+}
+
+.dashboard-header h1 {
+    margin: 10px 0;
+    font-size: 30px;
+    color: white;
+}
+
+.dashboard-header p {
+    color: #aab7c9;
+}
+
+/* Premium Progress Card */
+
+.progress-card {
+    margin: 22px 0;
+    padding: 22px;
+    background: linear-gradient(135deg, #1b2938, #101722);
+    border: 1px solid #35445a;
+    border-radius: 20px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.25);
+}
+
+.progress-card h2 {
+    margin-top: 0;
+    font-size: 19px;
+}
+
+.progress-card #progress {
+    color: #69ed83;
+    font-size: 30px;
+    font-weight: bold;
+    margin: 12px 0;
+}
+
+.progress-card .progress-bar {
+    width: 100%;
+    height: 12px;
+    background: #303b4c;
+    border-radius: 20px;
+    overflow: hidden;
+    margin: 15px 0;
+}
+
+.progress-card #progress-fill {
+    height: 100%;
+    width: 0%;
+    background: linear-gradient(90deg, #35c759, #8cff9d);
+    border-radius: 20px;
+    transition: width 0.4s ease;
+}
+
+.progress-caption {
+    font-size: 13px;
+    margin-bottom: 0;
+}
+/* Dashboard Stats Grid */
+
+.dashboard-stats {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 12px;
+    margin: 20px 0;
+}
+
+.stat-card {
+    background: linear-gradient(145deg, #202c3c, #151d29);
+    border: 1px solid #35445a;
+    border-radius: 15px;
+    padding: 16px 12px;
+    min-width: 0;
+}
+
+.stat-card span {
+    font-size: 25px;
+}
+
+.stat-card p {
+    font-size: 13px;
+    margin: 9px 0;
+}
+
+.stat-card strong {
+    color: #69ed83;
+    font-size: 16px;
+}

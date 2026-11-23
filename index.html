@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Daily Routine App</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="app">
+
+        <div class="dashboard-header">
+    <p class="eyebrow">YOUR PERSONAL SPACE</p>
+    <h1>Good Morning 👋</h1>
+    <p id="todayDate"></p>
+    <p>Plan your day and stay productive.</p>
+</div>
+        <div class="routine">
+         <button id="enableNotifications">Enable Notifications</button>
+            <h2>Today's Tasks</h2>
+        
+<button id="addTaskBtn">+ Add Task</button>
+
+<div id="taskForm" style="display: none;">
+    <input type="text" id="taskName" placeholder="Enter task name">
+    <input type="time" id="taskTime">
+    <button id="saveTaskBtn">Save Task</button>
+</div>
+        </div>
+           <div class="progress-card">
+
+    <h2>Today's Progress</h2>
+
+    <p id="progress">Progress: 0%</p>
+
+    <div class="progress-bar">
+        <div id="progress-fill"></div>
+    </div>
+
+    <p class="progress-caption">Keep going! You're doing great.</p>
+
+</div> 
+
+            <div class="task">
+                <input type="checkbox">
+                <span>Morning Study</span>
+                <input type="time" value="07:00" >
+            </div>
+
+            <div class="task">
+                <input type="checkbox">
+                <span>College</span>
+                <input type="time" value="09:00">
+            </div>
+
+            <div class="task">
+                <input type="checkbox">
+                <span>Exercise</span>
+                <input type="time" value="17:00">
+            </div>
+
+            <div class="task">
+                <input type="checkbox">
+                <span>Evening Study</span>
+                <input type="time" value="19:00">
+            </div>
+
+<!-- Premium Dashboard Stats -->
+<div class="dashboard-stats">
+
+    <div class="stat-card">
+        <span>🔥</span>
+        <p>Day Streak</p>
+        <strong id="streakCount">0 days</strong>
+    </div>
+
+    <div class="stat-card">
+        <span>💧</span>
+        <p>Water Goal</p>
+        <strong id="waterCardCount">0/8 Glasses</strong>
+    </div>
+
+    <div class="stat-card">
+        <span>🏋️</span>
+        <p>Workout</p>
+        <strong>5:00 PM</strong>
+    </div>
+
+    <div class="stat-card">
+        <span>🌙</span>
+        <p>Sleep</p>
+        <strong>Rest Well</strong>
+    </div>
+
+</div>
+
+        <!-- Daily Summary Dashboard -->
+<div class="summary">
+    <h2>📊 Daily Summary</h2>
+
+    <div class="summary-grid">
+        <div class="summary-card">
+            <span>Total Tasks</span>
+            <strong id="totalTasks">0</strong>
+        </div>
+
+        <div class="summary-card">
+            <span>Completed</span>
+            <strong id="completedTasks">0</strong>
+        </div>
+
+        <div class="summary-card">
+            <span>Pending</span>
+            <strong id="pendingTasks">0</strong>
+        </div>
+
+        <div class="summary-card">
+            <span>Completion</span>
+            <strong id="summaryPercentage">0%</strong>
+        </div>
+    </div>
+</div>
+        <h2> Diet Tracking</h2>
+        <p id="dietProgress">Diet Progress: 0%</p>
+        <div class="diet">
+            <label>
+                <input type="checkbox">
+                breakfast
+            </label>
+            <label>
+                <input type="checkbox">
+                lunch
+                </label>
+            <label>
+                <input type="checkbox">
+                evening snacks
+                </label>
+            <label>
+                <input type="checkbox">
+                dinner
+                </label>
+    </div>
+    <h2> Water tracking</h2>
+    <p id="waterProgress">Water: 0/8 glasses</p>
+    <div class="water">
+        <button id="addWater">Add Glass</button>
+        <button id="removeWater">Remove Glass</button>
+    </div>  <!-- Water tracking section -->
+     </div> <!-- app section -->
+    <script src="script.js"></script>
+
+</body>
+</html>
