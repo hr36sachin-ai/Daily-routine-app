@@ -10,10 +10,40 @@
 </head>
 
 <body>
+<div id="authSection" class="auth-section">
 
+    <p class="auth-subtitle">Login to your Daily Routine</p>
+    <h2>Welcome Back 👋</h2>
+
+    <input type="email" id="email" placeholder="Enter Email">
+
+    <div class="password-wrapper">
+        <input type="password" id="password" placeholder="Enter Password">
+        <button type="button" id="togglePassword">👁</button>
+    </div>
+
+    <button id="forgotPasswordBtn" type="button">
+        Forgot Password?
+    </button>
+
+    <button id="loginBtn">Login</button>
+
+    <div class="auth-divider"><span>or</span></div>
+
+    <button id="googleLoginBtn">Continue with Google</button>
+
+    <p class="signup-text">
+        Don't have an account?
+        <button id="signupBtn" type="button">Create Account</button>
+    </p>
+
+    <p id="authMessage"></p>
+
+</div>
     <div class="app">
 
         <div class="dashboard-header">
+            <button id="logoutBtn" type="button">Logout</button>
     <p class="eyebrow">YOUR PERSONAL SPACE</p>
     <h1>Good Morning 👋</h1>
     <p id="todayDate"></p>
@@ -152,6 +182,20 @@
     </div>  <!-- Water tracking section -->
      </div> <!-- app section -->
     <script src="script.js"></script>
+    <script type="module" src="firebase.js"></script>
+    <script type="module" src="auth.js"></script>
+<script>
+document.getElementById("togglePassword").addEventListener("click", function () {
+    const password = document.getElementById("password");
 
+    if (password.type === "password") {
+        password.type = "text";
+        this.textContent = "🙈";
+    } else {
+        password.type = "password";
+        this.textContent = "👁️";
+    }
+});
+</script>
 </body>
 </html>
